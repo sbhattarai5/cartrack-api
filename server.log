@@ -1,0 +1,131 @@
+Cars.get called
+Cars.get returned
+Cars.get called
+Cars.get returned
+Cars.get called
+Cars.get returned
+Cars.get called
+Cars.get returned
+Cars.get called
+Cars.get returned
+Cars.get called 2020-08-23 00:40:11.228156
+Cars.get called 2020-08-23 00:40:12.270370
+Cars.get called 2020-08-23 00:40:28.306220
+Cars.get called 2020-08-23 00:40:29.482583
+Cars.get called 2020-08-23 00:40:30.383780
+Cars.get called 2020-08-23 00:41:07.947939
+Cars.get called 2020-08-23 00:41:17.931833
+Cars.get returned 2020-08-23 00:41:17.935222
+Cars.get called 2020-08-23 00:41:47.270873
+Cars.get called 2020-08-23 00:42:00.241422
+Cars.get returned 2020-08-23 00:42:00.241750
+Cars.get called 2020-08-23 00:42:31.234795
+Cars.get returned 2020-08-23 00:42:31.235183
+Cars.get called 2020-08-23 00:42:41.358629
+Cars.get returned 2020-08-23 00:42:41.358813
+Cars.get called 2020-08-23 00:42:48.942146
+Cars.get returned 2020-08-23 00:42:48.942387
+Cars.get called 2020-08-23 00:45:01.528713
+Cars.get returned 2020-08-23 00:45:01.528962
+Cars.get called 2020-08-23 00:54:12.158572
+Cars.get returned 2020-08-23 00:54:12.174079
+Cars.get called 2020-08-23 00:54:46.153881
+Cars.get called 2020-08-23 00:55:20.470090
+Cars.get returned 2020-08-23 00:55:20.473994
+Cars.get called 2020-08-23 00:59:13.496963
+Cars.get returned 2020-08-23 00:59:13.498676
+Cars.get called 2020-08-23 01:24:45.943507
+Cars.get returned 2020-08-23 01:24:45.945355
+Cars.get called 2020-08-23 01:25:17.766401
+Cars.get returned 2020-08-23 01:25:17.768234
+Cars.get called 2020-08-23 01:25:40.178591
+Cars.get returned 2020-08-23 01:25:40.179416
+Cars.get called 2020-08-23 01:25:49.052766
+Cars.get returned 2020-08-23 01:25:49.053606
+Cars.get called 2020-08-23 01:26:04.502042
+Cars.get returned 2020-08-23 01:26:04.503230
+Cars.get called 2020-08-23 01:27:04.907019
+Cars.get returned 2020-08-23 01:27:04.910390
+Cars.get called 2020-08-23 01:27:05.940142
+Cars.get returned 2020-08-23 01:27:05.941239
+Cars.get called 2020-08-23 01:29:14.917986
+Cars.get called 2020-08-23 01:30:46.238527
+Cars.get returned 2020-08-23 01:30:46.241222
+Cars.get called 2020-08-23 01:36:53.894407
+Cars.get returned 2020-08-23 01:36:53.896303
+Cars.get called ==>  2020-08-23 02:47:38.586548
+Cars.get returned <==  2020-08-23 02:47:38.592004
+ ==> Cars.get called 2020-08-23 02:48:28.637887
+ <== Cars.get returned 2020-08-23 02:48:28.642612
+ ==> Cars.get called 2020-08-23 04:02:51.401190
+ <== Cars.get returned 2020-08-23 04:02:51.410303
+ ==> Cars.get called 2020-08-23 21:27:06.273799
+ ==> Cars.get called 2020-08-23 21:29:22.077839
+ <== Cars.get returned 2020-08-23 21:29:22.112640
+ ==> Cars.get called 2020-08-23 21:29:45.069987
+ <== Cars.get returned 2020-08-23 21:29:45.071045
+ ==> Cars.get called 2020-08-23 21:29:46.357191
+ <== Cars.get returned 2020-08-23 21:29:46.360013
+ ==> Cars.get called 2020-08-23 21:29:50.376176
+ <== Cars.get returned 2020-08-23 21:29:50.377545
+ ==> Cars.get called 2020-08-23 21:30:10.739961
+ <== Cars.get returned 2020-08-23 21:30:10.741452
+ ==> Cars.get called 2020-08-23 21:30:14.687744
+ <== Cars.get returned 2020-08-23 21:30:14.688860
+ ==> Cars.get called 2020-08-23 21:30:16.810284
+ <== Cars.get returned 2020-08-23 21:30:16.811310
+ ==> Cars.get called 2020-08-23 21:32:27.137280
+ <== Cars.get returned 2020-08-23 21:32:27.138638
+ ==> Cars.get called 2020-08-23 21:33:27.816970
+ <== Cars.get returned 2020-08-23 21:33:27.818994
+ ==> Cars.get called 2020-08-23 21:36:35.035681
+ ==> Cars.get called 2020-08-23 21:37:31.155046
+ ==> Cars.get called 2020-08-23 21:37:58.553141
+ <== Cars.get returned 2020-08-23 21:37:58.563782
+ ==> Cars.get called 2020-08-23 21:41:12.485676
+ <== Cars.get returned 2020-08-23 21:41:12.488653
+ ==> Cars.get called 2020-08-23 21:41:15.575632
+ <== Cars.get returned 2020-08-23 21:41:15.576753
+ ==> Cars.get called 2020-08-23 21:41:17.824058
+ <== Cars.get returned 2020-08-23 21:41:17.825157
+ ==> Cars.get called 2020-08-23 21:41:19.512445
+ <== Cars.get returned 2020-08-23 21:41:19.513621
+ ==> Cars.get called 2020-08-23 21:46:56.664230
+ <== Cars.get returned 2020-08-23 21:46:56.666666
+ ==> Cars.get called 2020-08-23 21:47:23.154911
+ <== Cars.get returned 2020-08-23 21:47:23.156405
+ ==> Cars.get called 2020-08-23 22:35:05.131106
+ ==> Cars.get called 2020-08-23 22:35:17.513815
+ ==> Cars.get called 2020-08-23 22:35:38.658221
+ <== Cars.get returned 2020-08-23 22:35:38.660396
+ ==> Cars.get called 2020-08-23 22:35:57.822984
+ <== Cars.get returned 2020-08-23 22:35:57.824400
+ ==> Cars.get called 2020-08-23 22:44:38.731673
+ <== Cars.get returned 2020-08-23 22:44:38.734136
+ ==> Cars.get called 2020-08-23 22:51:56.455250
+ ==> Cars.get called 2020-08-23 22:52:33.211456
+ <== Cars.get returned 2020-08-23 22:52:33.215634
+ ==> Car.get called 2020-08-23 22:52:42.693526
+ ==> Car.get called 2020-08-23 22:52:54.925611
+ <== Cars.get returned 2020-08-23 22:52:54.932034
+ ==> Car.get called 2020-08-23 22:54:40.778452
+ <== Cars.get returned 2020-08-23 22:54:40.780804
+ ==> Car.get called 2020-08-23 22:54:48.469231
+ <== Cars.get returned 2020-08-23 22:54:48.471985
+ ==> Car.get called 2020-08-23 22:55:09.126991
+ <== Cars.get returned 2020-08-23 22:55:09.128433
+ ==> Car.get called 2020-08-23 22:55:44.060168
+ <== Cars.get returned 2020-08-23 22:55:44.064543
+ ==> Car.get called 2020-08-23 22:56:18.516232
+ <== Cars.get returned 2020-08-23 22:56:18.522081
+ ==> Car.get called 2020-08-23 22:59:12.554337
+ <== Cars.get returned 2020-08-23 22:59:12.556441
+ ==> Car.get called 2020-08-23 22:59:20.294662
+ <== Cars.get returned 2020-08-23 22:59:20.296428
+ ==> Car.get called 2020-08-23 23:44:16.145854
+ ==> Car.delete called 2020-08-23 23:45:12.374613
+ ==> Car.delete called 2020-08-23 23:45:31.707002
+ <== Car.delete returned 2020-08-23 23:45:31.736536
+ ==> Car.delete called 2020-08-23 23:45:56.514862
+ ==> Car.delete called 2020-08-23 23:46:36.522409
+ ==> Car.delete called 2020-08-23 23:46:39.181854
