@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, make_response
+from flask import Flask, jsonify, make_response, request
 from flask_restful import Resource, Api, abort
 import pymongo
 from datetime import datetime
@@ -51,14 +51,20 @@ def log(msg):
         f.write(msg + ' ' + str(datetime.now()) + '\n')
     return
 
-def get_data(collection, filter, count, startIndex):
+def get_data(collection, filters, count, startIndex):
     '''returns the paginated data and the total count of documents in the given collection'''
     numskips = (startIndex - 1) * count
-    return list(mydb[collection].find(filter, {"_id":0}).skip(numskips).limit(count)), mydb[collection].count_documents({})
+    print (numskips)
+    return list(mydb[collection].find(filters, {"_id":0}).skip(numskips).limit(count)), mydb[collection].count_documents({})
 
-def delete_data(collection, filter):
+def post_data(collection, data):
+    '''adds data to the given collection'''
+    mydb[collection].insert_one(data)
+    return
+
+def delete_data(collection, filters):
     '''deletes data from the given collection by applying the given filters and returns the count of deleted items'''
-    return mydb[collection].delete_many(filter).deleted_count
+    return mydb[collection].delete_many(filters).deleted_count
 
     
 def get_urls(temp_url, count, startIndex, total_count):
@@ -70,13 +76,13 @@ def get_urls(temp_url, count, startIndex, total_count):
 def verify_vin(vin):
     '''checks if the given VIN is valid'''
     try:
-        serial_num = int(vin[11:])
-        return len(vin) == 17
+        #serial_num = int(vin[11:])
+        return len(vin) == 6
     except:
         return False
 
 ## parsing args for pagination
-index_args = {'count':fields.Integer(validate=lambda val: val > 0), 'startIndex':fields.Integer(validate=lambda val: val > 0)}
+index_args = {'count':fields.Integer(validate=lambda val: val > 0, missing=10), 'startIndex':fields.Integer(validate=lambda val: val > 0, missing=1)}
 
 class Cars(Resource):
     def __init__(self):
@@ -93,6 +99,19 @@ class Cars(Resource):
         return make_response(jsonify({"success": True, "prevPage": prevPage,
                                       "nextPage": nextPage, "data": cars}), 200)
 
+    def post(self):
+        data =  eval(request.data.decode())
+        vin = data['VIN']
+        print (vin)
+        car, _ = get_data("cars", {"VIN": vin}, count=1, startIndex=1)
+        if len(car) == 0:   # given vin not in the record
+            post_data("cars", data)
+            data.pop("_id") # removing the _id field because it's not JSON serializable
+            return make_response(jsonify({"success": True, "data": data}))
+        return make_response(jsonify({"success": False, "message": "VIN already exists"}))
+            
+        
+
 class Car(Resource):
     def __init__(self):
         super().__init__()
@@ -100,22 +119,27 @@ class Car(Resource):
         
     def get(self, vin):
         log(" ==> Car.get called")
-        if not verify_vin(vin): return make_response(jsonify({"success": False, "message": "VIN not valid"}), 400)  ##Bad request
+        if not verify_vin(vin):
+            return make_response(jsonify({"success": False, "message": "VIN not valid"}), 400)  ##Bad request
         car, _ = get_data("cars", {"VIN": vin}, 0, 1)  ## grab all the records
-        if len(car) == 0: return make_response(jsonify({"success": False, "message": "No car found with the given VIN"}), 404)
+        if len(car) == 0:
+            return make_response(jsonify({"success": False, "message": "No car found"}), 404)
         log(" <== Cars.get returned")
         return make_response(jsonify({"success": True, "data":car}), 200)
         
     def delete(self, vin):
         log(" ==> Car.delete called")
-        if not verify_vin(vin): return make_response(jsonify({"success": False, "message": "VIN not valid"}), 400)  ##Bad request 
+        if not verify_vin(vin):
+            return make_response(jsonify({"success": False, "message": "VIN not valid"}), 400)  ##Bad request 
         delete_count = delete_data("cars", {"VIN": vin})
-        if delete_count == 0: return make_response(jsonify({"success": False, "message": "No car found with the given VIN"}), 404)
+        if delete_count == 0:
+            return make_response(jsonify({"success": False, "message": "No car found"}), 404)
         log(" <== Car.delete returned")
         return make_response('', 204)
         
+        
 api.add_resource(Cars, '/api/cars')
-api.add_resource(Car, '/api/cars/<vin>')
+api.add_resource(Car, '/api/car/<vin>')
 
 
 if __name__ == '__main__':

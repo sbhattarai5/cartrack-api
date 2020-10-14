@@ -129,3 +129,26 @@ Cars.get returned <==  2020-08-23 02:47:38.592004
  ==> Car.delete called 2020-08-23 23:45:56.514862
  ==> Car.delete called 2020-08-23 23:46:36.522409
  ==> Car.delete called 2020-08-23 23:46:39.181854
+ ==> Car.get called 2020-10-14 03:02:22.260331
+ ==> Cars.get called 2020-10-14 03:02:35.283842
+ ==> Cars.get called 2020-10-14 03:04:54.453475
+ ==> Cars.get called 2020-10-14 03:04:55.865642
+ ==> Cars.get called 2020-10-14 03:05:24.592293
+ ==> Cars.get called 2020-10-14 03:05:36.693111
+ ==> Car.get called 2020-10-14 03:05:40.356954
+ ==> Cars.get called 2020-10-14 03:05:44.504556
+ ==> Cars.get called 2020-10-14 03:07:05.187132
+ ==> Cars.get called 2020-10-14 03:09:21.184495
+ <== Cars.get returned 2020-10-14 03:09:21.210931
+ ==> Car.delete called 2020-10-14 04:11:59.634182
+ <== Car.delete returned 2020-10-14 04:11:59.643029
+ ==> Cars.get called 2020-10-14 04:27:47.482777
+ <== Cars.get returned 2020-10-14 04:27:47.485290
+ ==> Cars.get called 2020-10-14 04:27:55.345220
+ <== Cars.get returned 2020-10-14 04:27:55.347011
+ ==> Cars.get called 2020-10-14 04:28:22.147139
+ <== Cars.get returned 2020-10-14 04:28:22.149174
+ ==> Cars.get called 2020-10-14 04:28:33.930142
+ <== Cars.get returned 2020-10-14 04:28:33.932093
+ ==> Cars.get called 2020-10-14 04:28:42.675510
+ <== Cars.get returned 2020-10-14 04:28:42.679178
